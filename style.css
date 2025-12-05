@@ -1,0 +1,173 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #f8f9fa;
+}
+
+
+header {
+  text-align: center;
+  background-color: #004aad;
+  color: white;
+  padding: 1.5rem;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.nav-links li {
+  margin: 0 10px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ffdd00;
+}
+
+/* Secties */
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+h2 {
+  border-bottom: 3px solid #004aad;
+  color: #004aad;
+  padding-bottom: 0.3rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #004aad;
+  color: white;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Pagina-specifiek */
+.home-page {.home-page header {
+  background: linear-gradient(135deg, #004aad, #00b4d8);
+  color: white;
+  padding: 3rem 1rem;
+}
+
+
+
+
+ 
+}
+
+.about-page {
+  background-color: rgb(110, 228, 228);
+    color: #222020;
+
+}
+
+
+.education-page{
+   background-color: #222020;
+    color: #c7b4b4;
+    padding: 7cqmin;
+    margin: 250px;
+padding: 10px;
+
+
+border: 1 px solid rgb(123, 111, 111);
+
+display: block;
+position: absolute;
+
+
+button 
+  border-radius: 20px;
+ 
+  box-shadow: 0 0 30px 30px pink;
+  
+
+
+
+}
+.skill-page{
+    background-color: #f6f5f3;
+    margin: 200px;
+    padding: 35px;
+    color: #222020;
+    button
+     border-radius: 20px;
+     
+    box-shadow: 00 20px 20px blue;
+}
+.work-page{
+    background-color: rgb(110, 228, 228);
+    color: #222020;
+}
+.image {
+  width: 300px;
+  display: block;       /* zorgt dat margin werkt */
+  margin: 20px auto;    /* in het midden */
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+.contact.page{
+    background-color: rgb(95, 16, 168);
+    color: #b39b9b;
+
+}
+.imagee{
+    width: 1300px;
+    margin: 30px;
+    height: 400px;
+}
+.image-row {
+    display: flex;
+    gap: 20px;        /* ruimte tussen de foto's */
+}
+
+.image-row img {
+    width: 45%;
+    border-radius: 10px;   /* optioneel mooiere hoeken */
+}
+
+
+/* Lichte modus (default) */
+body {
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+    font-family: sans-serif;
+}
+
+/* Dark mode */
+body.dark-mode {
+    background-color: #121212;
+    color: #f1f1f1;
+}
+
+/* Optioneel: header en footer aanpassen in dark mode */
+body.dark-mode header,
+body.dark-mode footer {
+    background-color: #1f1f1f;
+    color: #f1f1f1;
+}
+
+
+
+
+
