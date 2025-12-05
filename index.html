@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<header>
+<button id="theme-toggle">🌙</button> <br>
+    <img src="profielfoto.png" class="profiele-img">
+    <h1>Snit Haysh</h1>
+    <p>Student software development / Creatieve probleemoplosser</p>
+    
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="over-mij.html">Over mij</a></li>
+            <li><a href="opleiding.html">Opleiding</a></li>
+             <li><a href="werkervaring.html">Werkervaring</a></li>
+                <li><a href="vaardigheden.html">Vaardigheden</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            <li><a href=<!-- Cookie banner -->
+<div id="cookie-banner" style="position: fixed; bottom: 0; left: 0; width: 99%;
+ background: #333; color: white; padding: 10px; text-align: center; display: flex; 
+ justify-content: space-between; align-items: center; font-family: sans-serif;">
+  Deze site gebruikt cookies. We gebruiken cookies om onze website voor jou te 
+  optimaliseren, onze producten te verbeteren en om je, in samenwerking met derde <br>
+  partijen, gepersonaliseerde reclame te tonen.  Verdere informatie vind je in ons 
+  Cookiebeleid en in ons Privacybeleid. Technisch noodzakelijke cookies worden ook<br>
+   geplaatst wanneer je afwijzen kiest.
+  <div>
+    <button id="accept-btn" style="background: #4CAF50; color: white; border:
+     none; padding: 4px 8px; cursor: pointer; border-radius: 5px;">Akkoord</button>
+    <button id="reject-btn" style="background: #f44336; color: white; border: 
+    none; padding: 4px 8px; cursor: pointer; border-radius: 5px;">Reject</button>
+  </div>
+</div>
+
+<script>
+  const banner = document.getElementById('cookie-banner');
+  const acceptBtn = document.getElementById('accept-btn');
+  const rejectBtn = document.getElementById('reject-btn');
+
+  // Controleer of cookie al bestaat
+  if (document.cookie.includes("cookieChoice=")) {
+    banner.style.display = "none";
+  }
+
+  acceptBtn.addEventListener('click', () => {
+    // Zet een cookie die 30 dagen geldig is en geeft akkoord
+    document.cookie = "cookieChoice=accepted; max-age=" + 60*60*24*30 + "; path=/";
+    banner.style.display = "none";
+    console.log("Gebruiker heeft cookies geaccepteerd.");
+  });
+
+  rejectBtn.addEventListener('click', () => {
+    // Zet een cookie die 30 dagen geldig is en geeft reject
+    document.cookie = "cookieChoice=rejected; max-age=" + 60*60*24*30 + "; path=/";
+    banner.style.display = "none";
+    console.log("Gebruiker heeft cookies geweigerd.");
+  });
+</script>
+ 
+            
+        </ul>
+    </nav>
+    
+    
+</header>
+
+<main>
+    <section>
+        <h2>Welkom!</h2>
+        <p>Welkom op mijn persoonlijke CV-website. Hier vind je meer informatie 
+           over wie ik ben, mijn opleiding, vaardigheden en werkervaring. Ik ben 
+           Snit. Leerling Software Development met een passie voor technologie,
+           creativiteit en groei.</p>
+    </section>
+</main>
+
+<footer>
+     <p>Snit Haysh</p>
+</footer>
+<!-- SCRIPT ONDERAAN -->
+<script>
+  const toggleBtn = document.getElementById('theme-toggle');
+
+  toggleBtn.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+  });
+</script>
+
+
+</body>
+</html>
